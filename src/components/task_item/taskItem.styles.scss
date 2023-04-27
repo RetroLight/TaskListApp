@@ -1,0 +1,104 @@
+.task_item_container {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  background-color: rgba(217, 217, 217, 0.1);
+  border-radius: 12px;
+  border-width: 3px 1px 3px 1px;
+  border-style: solid;
+  padding: 20px 10px;
+  margin-top: 10px;
+  &.queue {
+    border-color: #000;
+  }
+  &.in_progress {
+    border-color: #FFD369;
+  }
+  &.done {
+    border-color: #689D61;
+  }
+
+  .priority_time_cont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .task_priority {
+      border: 1px solid #000;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 14px;
+      text-align: center;
+      min-width: 50px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.low {
+        background-color: #689D61;
+      }
+
+      &.standard {
+        background-color: #FFD900;
+      }
+
+      &.high {
+        background-color: #FF3333;
+      }
+    }
+  }
+
+  .task_title {
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+    text-align: -moz-left;
+    text-align: -webkit-left;
+  }
+
+  .task_description {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;
+    white-space: break-spaces;
+  }
+  .task_footer_cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    .task_create_time {
+      font-weight: 400;
+      font-size: 14px;
+      background-color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+      box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+    .delete_btn_cont {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 0;
+      cursor: pointer;
+      * {
+        stroke: #fff
+      }
+      & :hover * {
+        stroke: #989A9B;
+      }
+      & :active * {
+        stroke: #FFD900;
+      }
+    }
+  }
+}

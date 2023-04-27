@@ -1,0 +1,13 @@
+.timer_container {
+  background-color: #FFD369;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 15px;
+  font-size: 14px;
+  min-width: 86px;
+    span {
+      font-weight: 500;
+      font-size: 12px;
+    }
+}

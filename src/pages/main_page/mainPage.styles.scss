@@ -1,0 +1,47 @@
+.main_page_container {
+  width: 100%;
+  height: 100%;
+
+  .main_page_heading {
+    color: #fff;
+    margin-top: 40px;
+    font-size: 30px;
+    letter-spacing: 0.015em;
+    font-weight: 600;
+  }
+
+  .add_project_input_container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .input_container {
+      width: 400px;
+      height: 40px;
+    }
+    .button_container {
+      height: 40px;
+    }
+  }
+
+  .main_page_projects {
+    margin-top: 80px;
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 362px);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .popup_input_container {
+    margin-top: 30px;
+    height: 40px;
+  }
+  .popup_button_container {
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 40px;
+    width: 120px;
+  }
+}
